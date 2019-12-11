@@ -3,6 +3,7 @@
 
 # For more information about landsat 8 bands, see:
 # https://www.usgs.gov/media/images/landsat-8-band-designations
+# https://landsat.gsfc.nasa.gov/landsat-8/landsat-8-bands/
 # https://www.usgs.gov/faqs/how-does-data-sentinel-2a-s-multispectral-instrument-compare-landsat-data
 RED_2013 = "data/120m/LC08_L1TP_042034_20130605_20170310_01_T1_B4_120x120.TIF"
 NIR_2013 = "data/120m/LC08_L1TP_042034_20130605_20170310_01_T1_B5_120x120.TIF"
