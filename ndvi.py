@@ -12,12 +12,20 @@ NIR_2016 = "data/120m/LC08_L1TP_042034_20160629_20170222_01_T1_B5_120x120.TIF"
 
 
 def ndvi(red, nir):
-    """Calculate NDVI for a Landsat 8 scene.
+    """Calculate NDVI from numpy arrays.
 
-    For more information about NDVI, see:
+    NDVI is calculated from the Red and Near-Infrared bands of remotely-sensed
+    imagery using this equation::
+
+               (NIR - RED)
+        NDVI = -----------
+               (NIR + RED)
+
+    For more information about NDVI, including a discussion of its advantages
+    and limitations, see:
     https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index
 
-    Parameters:
+    Args:
         red (numpy.ndarray) - a numpy array of the red band for a Landsat 8
             scene.
         nir (numpy.ndarray) - a numpy array of the near-infrared band for a
